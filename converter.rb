@@ -1,10 +1,13 @@
 class Converter
   def decimal_to_roman(decimal)
-    if decimal == 5
-      "V"
-    else
-      "I" * decimal
+    n, result = decimal, ""
+
+    if n >= 5
+      result << "V"
+      n -= 5
     end
+
+    result << "I" * n
   end
 
   def roman_to_decimal(roman)
