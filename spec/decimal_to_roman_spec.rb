@@ -19,4 +19,8 @@ RSpec.describe Converter do
   it { expect(decimal_to_roman(10)).to eq "X"  }
 
   it { expect(decimal_to_roman(20)).to eq "XX" }
+
+  it { expect(decimal_to_roman(40)).to eq "XL" }
+  it { expect(decimal_to_roman(50)).to eq "L"  }
+  it { expect(decimal_to_roman(90)).to eq "XC" }
 end
