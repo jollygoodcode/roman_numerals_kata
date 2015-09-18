@@ -10,4 +10,6 @@ RSpec.describe Converter do
   it { expect(decimal_to_roman(1)).to eq "I"   }
   it { expect(decimal_to_roman(2)).to eq "II"  }
   it { expect(decimal_to_roman(3)).to eq "III" }
+
+  it { expect(decimal_to_roman(5)).to eq "V"   }
 end
