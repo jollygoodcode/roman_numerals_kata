@@ -1,6 +1,6 @@
 class Converter
   def decimal_to_roman(decimal)
-    raise "NotImplementedError"
+    "I" * decimal
   end
 
   def roman_to_decimal(roman)
