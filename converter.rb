@@ -2,7 +2,7 @@ class Converter
   def decimal_to_roman(decimal)
     n, result = decimal, ""
 
-    if n >= 10
+    while n >= 10
       result << "X"
       n -= 10
     end
