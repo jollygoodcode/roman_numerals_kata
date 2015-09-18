@@ -17,7 +17,12 @@ class Converter
       n -= 4
     end
 
-    result << "I" * n
+    while n >= 1
+      result << "I"
+      n -= 1
+    end
+
+    result
   end
 
   def roman_to_decimal(roman)
