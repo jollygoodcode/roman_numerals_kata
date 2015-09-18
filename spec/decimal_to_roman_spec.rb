@@ -28,4 +28,6 @@ RSpec.describe Converter do
   it { expect(decimal_to_roman(400)).to eq "CD" }
   it { expect(decimal_to_roman(500)).to eq "D"  }
   it { expect(decimal_to_roman(900)).to eq "CM" }
+
+  it { expect(decimal_to_roman(1000)).to eq "M" }
 end
