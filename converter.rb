@@ -20,6 +20,26 @@ class Converter
   }
 
   def roman_to_decimal(roman)
+    result = 0
+    romans = roman.split("")
+
+    while !romans.empty?
+      first, second = romans
+
+      if value_of(first) >= value_of(second)
+        result += value_of(first)
+      else
+        result += value_of(second) - value_of(first)
+        romans.shift
+      end
+
+      romans.shift
+    end
+
+    result
+  end
+
+  def value_of(roman)
     ROMAN_VALUES.fetch(roman) { 0 }
   end
 end
