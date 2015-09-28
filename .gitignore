@@ -1,1 +1,6 @@
+.bundle
+
+bin
+vendor/bundle
+
 spec/examples.txt
